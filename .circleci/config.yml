@@ -22,7 +22,7 @@
           key: dotnet-packages-v1-{{ checksum "Analytics/Analytics.csproj" }}
       - run:
           name: "Run Application Tests"
-          command: dotnet.exe test -v n --results-directory:test_coverage --collect
+          command: dotnet.exe test -v n --results-directory:test_coverage --collect test_collect_result
    build:
      description: Build application with Release configuration
      executor: 
